@@ -1,7 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiCsharp, SiMongodb, SiFirebase } from "react-icons/si";
-import { DiNodejsSmall } from "react-icons/di";
-import { FaAndroid, FaMapMarkerAlt, FaDatabase } from "react-icons/fa";
+import { SiFirebase, SiAngular, SiSpringboot, SiMysql, SiFlutter } from "react-icons/si";
+import { FaMapMarkerAlt, FaDatabase } from "react-icons/fa";
 import { AiOutlineApi } from "react-icons/ai";
 import {motion } from "framer-motion"
 
@@ -45,35 +44,35 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiCsharp className="text-7xl text-purple-700" /> {/* C# */}
+          <SiAngular className="text-7xl text-purple-700" /> {/* Angular js */}
         </motion.div>
         <motion.div 
         variants={iconVariants(2.5)}
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiMongodb className="text-7xl text-green-500" /> {/* MongoDB */}
+          <SiMysql className="text-7xl text-green-500"/> {/* Mysql */}
         </motion.div>
         <motion.div 
         variants={iconVariants(2.5)}
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiFirebase className="text-7xl text-orange-500" /> {/* Firebase */}
+          <SiFirebase className="text-7xl text-orange-500"/> {/* Firebase */}
         </motion.div>
         <motion.div 
         variants={iconVariants(6)}
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <DiNodejsSmall className="text-7xl text-green-600" /> {/* Node.js */}
+          <SiSpringboot className="text-7xl text-green-600" /> {/* Spring boot */}
         </motion.div>
         <motion.div 
         variants={iconVariants(2.5)}
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaAndroid className="text-7xl text-green-700" /> {/* Android */}
+          <SiFlutter className="text-7xl text-green-700" /> {/* Android */}
         </motion.div>
         <motion.div 
         variants={iconVariants(6)}

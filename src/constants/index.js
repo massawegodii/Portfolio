@@ -1,28 +1,34 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpeg";
+import project1 from "../assets/projects/project1.jpg";
+import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
-import project5 from "../assets/projects/project-5.jpg";
 
 export const EXPERIENCES = [
   {
-    year: "March 2024 - June 2024",
+    year: "June 2024 - September 2024",
     role: "Developer Intern",
-    company: "Netstream Intergrated Solutions",
-    description: `Built a Southside FM Radio App and contributed to various projects, enhancing web and mobile application development skills.`,
-    technologies: ["Java", "Kotlin", "C#", "Node.js", "API", "ASP.NET MVC", "Azure", "SQL"],
+    company: "Global Revolution Company",
+    description: `Built a loss weight monitory application that is used to assess weight of a person calculate BMI, BMR and Daily Calories burn through excercise and finally Tanzania Best Weight Loss Award .`,
+    technologies: [
+      "Spring boot",
+      "Flutter",
+      "Node.js",
+      "Angular",
+      "API",
+      "Nginx",
+      "mySQL",
+    ],
   },
   {
-    year: "Febuary 2024 - March 2024",
-    role: "Python Programming Intern",
-    company: "Oasis Infobyte",
-    description: `Completed a one-month virtual internship exploring Python programming. Worked on projects involving data manipulation and scripting automation tasks, enhancing problem-solving and code optimization skills.`,
-    technologies: ["Python"],
-  },
-  {
-    year: "January 2024 - Febuary 2024",
+    year: "August 2023 - October 2023",
     role: "Web Development Intern",
-    company: "Codsoft",
+    company: "Tanzania Telecommunications Cooperation (TTCL)",
+    description: `Developed an asset management system using spring boot at the server-side and angular js at the client-side, i also implement the messaging mechanism using the twillio and create responsive dashboard using material ui.`,
+    technologies: ["Spring boot", "Angular js, React js"],
+  },
+  {
+    year: "August 2022 - October 2022",
+    role: "Web Development",
+    company: "Dar Es Salaam Institute of Technology (DIT)",
     description: `Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript. Focused on enhancing user interaction and interface aesthetics.`,
     technologies: ["HTML", "CSS", "JavaScript"],
   },
@@ -30,17 +36,23 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    "title": "Southside FM Radio App",
-    "image": project1,
-    "description": "A comprehensive radio streaming application developed during an internship at Netstream Integrated Solutions. The app provides live radio streaming, station listing, weather, and latest news updates.",
-    "technologies": ["Java", "Kotlin", "News API", "WeatherAPI"]
+    title: "Kiganjani Medical Check App",
+    image: project1,
+    description: "A healthcare application used in loss weight monitory with the help of doctor guideline build using flutter and spring boot in the server side.",
+    technologies: ["Dart", "Flutter", "Location API", "Spring boot"],
   },
-  
+
   {
-    "title": "HealthCare App",
-    "image": project2,
-     "description": "A healthcare application with integrated features such as a News API for real-time healthcare updates, Google Maps for user location tracking, and an intelligent chatbot designed to assist users with customer service inquiries and provide information.",
-    "technologies": ["Java", "Kotlin", "GerminiAPI", "Firebase" , "Google Maps API"]
+    title: "Asset Management System",
+    image: project2,
+    description:
+      "Asset Management System that is used to manage all the assets in office include electronics equipment, furniture as well as documents, this system also provide a maintenance subsystem that give notification when the maintenance period reach, it also manage all the user's and users that have been given privilege can send normal message(sms) to the other users.",
+    technologies: [
+      "Java Spring boot",
+      "Angular",
+      "API",
+      "Twillio SMS",
+    ],
   },
 
   {
@@ -48,28 +60,20 @@ export const PROJECTS = [
     image: project3,
     description:
       "The DUT Ticket System was developed as part of a Work-Integrated Learning (WIL) academic module. This collaborative project created an efficient platform for managing student queries at Durban University of Technology (DUT), streamlining academic and administrative inquiries for timely and effective responses.",
-    technologies: ["Microsoft Azure", "ASP.NET", "SQL", ".NET Framework", "CRUD", "GitHub"],
+    technologies: [
+      "Microsoft Azure",
+      "ASP.NET",
+      "SQL",
+      ".NET Framework",
+      "CRUD",
+      "GitHub",
+    ],
   },
 
-  {
-    title: "Birdlife App",
-    image: project4,
-    description:
-      "This Android Studio app is designed for bird enthusiasts and ornithologists to observe and document bird sightings. It uses MapBox for mapping features and integrates with the eBird API 2.0 to provide up-to-date information about bird species and sightings.",
-    technologies: ["Java", "Kotlin", "Firebase Authentication", "Firebase Realtime", "Mapbox API"],
-  },
-
-  {
-    title: "Dewey Decimal System",
-    image: project5,
-    description:
-      "I developed an application using C# WPF to manage and categorize a library's collection based on the Dewey Decimal System. This application provides an intuitive interface for librarians to easily classify, search, and maintain their catalog. ",
-    technologies: ["C#", "WPF"],
-  },
 ];
 
 export const CONTACT = {
-  address: "B48 Nkonkoni Road, Inanda Newtown, Durban 4310, South Africa.",
-  phoneNo: "+27 67 655 5315",
-  email: "khumalophilani580@gmail.com",
+  address: "Makumbusho Road, Sinza Madukani, Dar es salaam.",
+  phoneNo: "+255 753 193 439 | +255 624 279 007",
+  email: "massaweg23@gmail.com",
 };
