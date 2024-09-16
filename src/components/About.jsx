@@ -25,7 +25,7 @@ const About = () => {
         
         className="w-full lg:w-1/2 lg:p-8">
         <div className="flex justify-center lg:justify-start">
-          <p className="my-2 max-w-xl py-6">🎓 Hi, Im Godfrey Matias, a recent graduate from Dar es salaam Institute of Technology (DIT) with a Bachelor degree in Computer Engineering, specializing in Application and web Development. My technical expertise includes C#, Java, Python, Node.js, SQL, and proficiency in cloud platforms such as Azure and Firebase.
+          <p className="my-2 max-w-xl py-6">🎓 Hi, Im Godfrey Matias, a recent graduate from Dar es salaam Institute of Technology (DIT) with a Bachelor degree in Computer Engineering, specializing in Mobile Application and web Development. My technical expertise includes Java Spring Boot, Python, Angular, React, Dart and proficiency in cloud platforms such as Firebase.
             I excel in dynamic, collaborative environments where creativity, continuous improvement, and innovation are encouraged. With a strong ability to translate client needs into practical, scalable solutions, I ensure seamless user experiences across web and mobile applications. My leadership experience in code development and project management enhances my effectiveness within teams, making me a valuable asset to any organization.
             I stay updated with the latest industry trends and best practices, positioning myself to provide forward-thinking solutions that drive technological advancements. Eager to contribute to pioneering projects and emerging technologies, I leverage my skills to deliver impactful results.
             </p>

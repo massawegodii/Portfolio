@@ -22,7 +22,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
                 src={project.image}
                 width={180}
-                height={180}
+                height={100}
                 alt={project.title}
                 className="mb-6 rounded"
               />
@@ -42,7 +42,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
                 className="mb-4 text-neutral-400"
               >
-                {project.description}
+                {project.description}````
               </motion.p>
               {project.technologies.map((tech, index) => (
                 <span

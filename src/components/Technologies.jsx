@@ -1,8 +1,8 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiFirebase, SiAngular, SiSpringboot, SiMysql, SiFlutter } from "react-icons/si";
-import { FaMapMarkerAlt, FaDatabase } from "react-icons/fa";
-import { AiOutlineApi } from "react-icons/ai";
+import { SiAngular, SiSpringboot, SiMysql, SiFlutter, SiDjango, SiPostman } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
 import {motion } from "framer-motion"
+import { BiLogoFirebase } from "react-icons/bi";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -58,7 +58,7 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiFirebase className="text-7xl text-orange-500"/> {/* Firebase */}
+          <BiLogoFirebase className="text-7xl text-orange-500"/> {/* Firebase */}
         </motion.div>
         <motion.div 
         variants={iconVariants(6)}
@@ -72,14 +72,14 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiFlutter className="text-7xl text-green-700" /> {/* Android */}
+          <SiFlutter className="text-7xl text-green-700" /> {/* Flutter */}
         </motion.div>
         <motion.div 
         variants={iconVariants(6)}
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <FaMapMarkerAlt className="text-7xl text-red-500" /> {/* Map Marker */}
+          <SiDjango className="text-7xl text-red-500" /> {/* Django */}
         </motion.div>
         <motion.div 
         variants={iconVariants(2.5)}
@@ -93,7 +93,7 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <AiOutlineApi className="text-7xl text-purple-500" /> {/* API */}
+          <SiPostman className="text-7xl text-purple-500" /> {/* API */}
         </motion.div>
       </motion.div>
     </div>
