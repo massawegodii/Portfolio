@@ -1,13 +1,13 @@
 import project1 from "../assets/projects/project1.jpg";
 import project2 from "../assets/projects/project2.png";
-import project3 from "../assets/projects/project-3.jpg";
+import project3 from "../assets/projects/project13.png";
 
 export const EXPERIENCES = [
   {
     year: "June 2024 - September 2024",
     role: "Developer Intern",
     company: "Global Revolution Company",
-    description: `Built a loss weight monitory application that is used to assess weight of a person calculate BMI, BMR and Daily Calories burn through excercise and finally Tanzania Best Weight Loss Award .`,
+    description: `Built a loss weight monitory application that is used to assess weight of a person calculate BMI, BMR and Daily Calories burn through excercise and finally Tanzania Best Weight Loss Award.`,
     technologies: [
       "Spring boot",
       "Flutter",
@@ -33,6 +33,29 @@ export const EXPERIENCES = [
   },
 ];
 
+export const EDUCATION = [
+  {
+    year: "October 2020 - August 2024",
+    role: "Bachelor Degree in Computer Engineering",
+    company: "Dar es salaam Institute of Technology (DIT)",
+    description: `Dar es Salaam Institute of Technology (DIT), located in Dar es Salaam, Tanzania, is a premier institution specializing in engineering and technology education. It offers a variety of diploma and degree programs, emphasizing practical skills and hands-on learning to prepare students for the evolving job market. DIT is recognized for its commitment to research, innovation, and excellence in engineering and technology.`,
+  },
+  {
+    year: "July 2018 - June 2020",
+    role: "Advance Secondary School Education",
+    company: "Galanos Secondary School",
+    description: `Galanos Secondary School, located in Tanga, Tanzania, is a well-respected educational institution known for its strong emphasis on academic excellence. I studied Physics, Chemistry, and Mathematics (PCM) there, which provided me with a solid foundation in the sciences and analytical skills. The school is dedicated to fostering a supportive learning environment, encouraging students to develop critical thinking and problem-solving abilities essential for their future studies and careers.`,
+  },
+  {
+    year: "January 2014 - November 2017",
+    role: "Ordinary Secondary School Education",
+    company: "Okaoni Secondary School",
+    description: `Okaoni Secondary School, located in Moshi, Tanzania, is a prominent O-Level educational institution known for its commitment to academic excellence and student development. The school offers a robust curriculum that emphasizes a well-rounded education, preparing students for further studies and future careers. With a focus on creating a supportive and inclusive learning environment, Okaoni Secondary School encourages students to develop critical thinking, creativity, and leadership skills essential for success in today’s world.`,
+  },
+ 
+];
+
+
 export const PROJECTS = [
   {
     title: "Kiganjani Medical Check App",
@@ -49,15 +72,13 @@ export const PROJECTS = [
   },
 
   {
-    title: "DUT Ticket System",
+    title: "Food Database and Video Session Training",
     image: project3,
-    description: `The DUT Ticket System was developed as part of a Work-Integrated Learning (WIL) academic module. This collaborative project created an efficient platform for managing student queries at Durban University of Technology (DUT), streamlining academic and administrative inquiries for timely and effective responses.`,
+    description: `The Food Database and Video Session Training is a system that is used to manage the food using picture and its calories, it is used to add food to the mobile application which we intergrate with it, it also have a video session program where you can add the recorded videos .`,
     technologies: [
-      "Microsoft Azure",
-      "ASP.NET",
-      "SQL",
-      ".NET Framework",
-      "CRUD",
+      "React",
+      "Spring boot",
+      "MySQL",
       "GitHub",
     ],
   },
