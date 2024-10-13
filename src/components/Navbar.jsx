@@ -37,7 +37,7 @@ const Navbar = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-xl sm:text-2xl mt-4 sm:mt-0">
             <a
-              href="https://www.linkedin.com/in/godfrey-massawe-751253303/"
+              href="https://www.linkedin.com/in/godfrey-matias-751253303"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full text-white hover:bg-blue-600 transition-colors duration-300"
