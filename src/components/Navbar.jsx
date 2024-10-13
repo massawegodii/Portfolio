@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { FaLinkedin, FaGithub, FaWhatsapp, FaHome, FaLaptopCode } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaWhatsapp, FaLaptop } from 'react-icons/fa';
 import Education from './Education'; 
-import { FaBook, FaGraduationCap } from 'react-icons/fa6';
+import {  FaGraduationCap } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [isEducationModalOpen, setEducationModalOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
           }}
           className="px-4 py-2 text-sm sm:text-lg font-medium rounded-lg hover:bg-gray-600 transition-colors duration-300 flex items-center"
         >
-          <FaLaptopCode className="mr-2" /> {/* Home icon */}
+          <FaLaptop className="mr-2" /> {/* Home icon */}
           Home
         </a>
         <button

@@ -1,6 +1,6 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiAngular, SiSpringboot, SiMysql, SiFlutter, SiDjango, SiPostman } from "react-icons/si";
-import { FaDatabase } from "react-icons/fa";
+import { SiAngular, SiSpringboot, SiMysql, SiFlutter, SiPostman } from "react-icons/si";
+import { FaDatabase, FaNodeJs } from "react-icons/fa";
 import {motion } from "framer-motion"
 import { BiLogoFirebase } from "react-icons/bi";
 
@@ -79,7 +79,7 @@ const Technologies = () => {
         initial="initial"
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiDjango className="text-7xl text-red-500" /> {/* Django */}
+          <FaNodeJs className="text-7xl text-teal-500" /> {/* Node JS */}
         </motion.div>
         <motion.div 
         variants={iconVariants(2.5)}
