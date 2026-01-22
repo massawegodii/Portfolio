@@ -19,7 +19,7 @@ const Navbar = () => {
           onClick={() => {
             window.history.pushState({}, '', '/');
           }}
-          className="px-4 py-2 text-sm sm:text-lg font-medium rounded-lg hover:bg-gray-600 transition-colors duration-300 flex items-center"
+          className="px-4 py-2 text-sm sm:text-lg font-medium rounded-lg hover:bg-gray-600 transition-colors duration-300 flex items-center cursor-pointer"
         >
           <FaLaptop className="mr-2" /> {/* Home icon */}
           Home

@@ -12,7 +12,7 @@ const container = (delay) => ({
 
 const hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35"> 
+    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -40,33 +40,33 @@ const hero = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 tracking-tighter"
             >
-              I am a passionate full stack developer with a knack for crafting
-              robust and scalable web applications. With 1+ years of hands-on
-              experience, I have honed my skills in front-end technologies like
-              Angular js, React, Bootstrap and other material libraries, as well
-              as back-end technologies like Java Spring boot and python with
-              MySQL, Postgres, and MongoDB database, moreover i have skills in
-              Mobile Application using flutter. My goal is to leverage my
-              expertise to create innovative solutions that drive business
-              growth and deliver exceptional user experiences.
+              I am a passionate Full Stack Developer with over 2+ years of
+              hands-on experience designing and building robust, scalable web
+              and mobile applications. I have strong expertise in front-end
+              technologies including Angular, React, Bootstrap, and modern UI
+              libraries, as well as back-end development using Node js, Java Spring Boot
+              and Python, working with MySQL, PostgreSQL and MongoDB databases.
+              In addition, I have solid experience developing cross-platform
+              mobile applications using Flutter. I am driven to leverage my
+              technical skills to create innovative, high-performance solutions
+              that support business growth and deliver exceptional user
+              experiences.
             </motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-        <div className="flex justify-center mt-40">
-          <motion.img
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 2, delay: 1.2 }}
-            src={profilePic}
-            width={190}
-            alt="Godfrey"
-            className="mb-1 border border-transparent hover:border-black" 
-          />
+          <div className="flex justify-center mt-40">
+            <motion.img
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 2, delay: 1.2 }}
+              src={profilePic}
+              width={190}
+              alt="Godfrey"
+              className="mb-1 border border-transparent hover:border-black"
+            />
+          </div>
         </div>
-      </div>
-
-
       </div>
     </div>
   );

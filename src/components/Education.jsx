@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import { FaGraduationCap } from "react-icons/fa";
 
-const Education = ({ isModalOpen, closeModal }) => {
+const Education = ({ isModalOpen = false, closeModal = () => {} }) => {
   useEffect(() => {
     localStorage.setItem("isModalOpen", isModalOpen);
 
@@ -19,9 +19,7 @@ const Education = ({ isModalOpen, closeModal }) => {
     };
   }, [isModalOpen, closeModal]);
 
-  if (!isModalOpen) {
-    return null;
-  }
+  if (!isModalOpen) return null;
 
   const handleClose = (e) => {
     if (e.target.id === "modal-overlay") {
@@ -33,55 +31,90 @@ const Education = ({ isModalOpen, closeModal }) => {
     <div
       id="modal-overlay"
       onClick={handleClose}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
+      className="fixed inset-0 z-50 flex items-start justify-center bg-black bg-opacity-80 px-4 py-10"
     >
-      <div className="relative bg-gray-900 text-white p-8 max-w-screen-lg w-full h-4/5 lg:max-h-4/5 overflow-y-auto rounded-lg shadow-2xl">
-        <motion.h1
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -100 }}
-          transition={{ duration: 1.5 }}
-          className="my-10 flex items-center justify-center text-3xl font-bold"
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95, y: 30 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="relative w-full max-w-5xl max-h-[85vh] rounded-2xl bg-gradient-to-b from-gray-900 to-black p-10 shadow-2xl overflow-y-scroll"
+        style={{
+          scrollbarWidth: "none",       // Firefox
+          msOverflowStyle: "none",      // IE & Edge
+        }}
+      >
+        {/* HIDE SCROLLBAR — Chrome, Safari, Edge */}
+        <style>
+          {`
+            div::-webkit-scrollbar {
+              display: none;
+            }
+          `}
+        </style>
+
+        {/* CLOSE BUTTON */}
+        <button
+          onClick={closeModal}
+          className="absolute right-5 top-5 rounded-full bg-red-500/90 px-4 py-1.5 text-sm font-semibold text-white hover:bg-red-600 transition"
         >
-          <FaGraduationCap className="mr-2 text-purple-400 text-5xl" />
-          Education
+          Close
+        </button>
+
+        {/* HEADER */}
+        <motion.h1
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mb-14 flex items-center justify-center gap-3 text-4xl font-extrabold"
+        >
+          <FaGraduationCap className="text-purple-500 text-5xl" />
+          <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+            Education
+          </span>
         </motion.h1>
 
-        <div>
+        {/* TIMELINE */}
+        <div className="relative space-y-14 border-l border-purple-600/30 pl-8">
           {EDUCATION.map((education, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-                className="w-full lg:w-1/4"
-              >
-                <p className="mb-2 text-sm text-gray-400">{education.year}</p>
-              </motion.div>
-              <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 0.5 }}
-                className="w-full max-w-xl lg:w-3/4"
-              >
-                <h6 className="mb-2 font-semibold text-white">
-                  {education.role} -{" "}
-                  <span className="text-sm text-purple-400">
-                    {education.company}
-                  </span>
-                </h6>
-                <p className="mb-4 text-gray-400">{education.description}</p>
-              </motion.div>
-            </div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="relative"
+            >
+              {/* DOT */}
+              <span className="absolute -left-[11px] top-2 h-5 w-5 rounded-full bg-purple-500 shadow-lg" />
+
+              {/* CARD */}
+              <div className="rounded-xl bg-gray-800/70 p-6 backdrop-blur-md shadow-lg">
+                <p className="mb-2 text-sm font-medium text-purple-400">
+                  {education.year}
+                </p>
+
+                <h3 className="text-xl font-semibold text-white">
+                  {education.role}
+                </h3>
+
+                <p className="mb-4 text-sm text-gray-400">
+                  {education.company}
+                </p>
+
+                <p className="leading-relaxed text-gray-300">
+                  {education.description}
+                </p>
+              </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
 
 Education.propTypes = {
-  isModalOpen: PropTypes.bool.isRequired,
-  closeModal: PropTypes.func.isRequired,
+  isModalOpen: PropTypes.bool,
+  closeModal: PropTypes.func,
 };
 
 export default Education;
